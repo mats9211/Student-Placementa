@@ -9,7 +9,9 @@ app= Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-
+#############################
+#############################
+#############################
 @app.route("/predict", methods=["POST"])
 def predict_placement():
     cgpa= float(request.form.get("cgpa"))
